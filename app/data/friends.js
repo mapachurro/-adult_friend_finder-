@@ -1,9 +1,7 @@
 var path = require("path");
-var friends;
 
-module.exports.friends = friends;
 
-friends = 
+var friends = 
     [
         {
             name: "Begbie",
@@ -175,5 +173,6 @@ friends =
             ]
         }
     ]
-    
 
+    module.exports =  friends;
+        

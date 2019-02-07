@@ -1,5 +1,5 @@
 var path = require("path");
-var eval = require("../public/assets/javascript/eval")
+var eval = require("../public/assets/javascript/eval.js")
 
 
 module.exports = function(app) {
@@ -19,8 +19,8 @@ app.post("/results", function(req, res) {
   name = req.body.name;
   pic = req.body.pic;
   answers = req.body.answers;
-  
-  
+
+  eval.compare(answers)
   // eval.compare(req.)
 
 

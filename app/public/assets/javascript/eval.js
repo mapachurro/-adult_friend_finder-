@@ -1,14 +1,18 @@
 var path = require("path");
 var friends = require("../../../data/friends");
+arr1 = friends;
 
 
-function compare(arr1, arr2){
+var compare ={
 
-    friends.forEach((friends[e1].scores)=>arr2.forEach((e2)=>
-    if (e1 === e2){
-        
-    }))
+compare: function(input){
+    arr2 = input;
+console.log (arr1, arr2);
+
 }
+
+}
+module.exports = compare;
 
 // Capture the form inputs
 
