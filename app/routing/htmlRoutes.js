@@ -15,7 +15,7 @@ module.exports = function(app) {
 app.post("/results", function(req, res) {
   console.log(req.body.name)
   console.log(req.body.pic)
-  console.log(req.body.answers)
+  console.log(req.body.answers + " now passing data to eval.js")
   name = req.body.name;
   pic = req.body.pic;
   answers = req.body.answers;
