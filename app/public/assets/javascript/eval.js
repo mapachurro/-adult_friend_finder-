@@ -7,48 +7,19 @@ var compare ={
 
 compare: function(input){
     arr2 = input;
-console.log (arr1, arr2);
+console.log(arr2);
+
+arr1.forEach(function(element, i) {
+    console.log(arr1[i].scores);
+  });
 
 }
 
 }
 module.exports = compare;
 
-// Capture the form inputs
 
-    // Form validation
-    // function validateForm() {
-    //   var isValid = true;
-    //   $(".form-control").each(function() {
-    //     if ($(this).val() === "") {
-    //       isValid = false;
-    //     }
-    //   });
-
-    //   $(".chosen-select").each(function() {
-
-    //     if ($(this).val() === "") {
-    //       isValid = false;
-    //     }
-    //   });
-    //   return isValid;
-    // }
-
-    // If all required fields are filled
-    // if (validateForm()) {
-    //     // Create an object for the user"s data
-
-    //     // AJAX post the data to the friends API.
-    //     $.post("/api/friends", userData, function (data) {
-
-    //         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-    //         $("#match-name").text(data.name);
-    //         $("#match-img").attr("src", data.photo);
-
-    //         // Show the modal with the best match
-    //         $("#results-modal").modal("toggle");
-
-    //     });
-    // } else {
-    //     alert("Please fill out all fields before submitting!");
-    // }
+// So this is where the work has to happen.
+// What I would like to do is this: 
+//  -Compare each number of each scores array against each number of the user's submission array.
+//  -Increment a counter on each object for each number on the 
